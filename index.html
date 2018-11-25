@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<title>Daisy Dinh Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
+</style>
+<body class="w3-theme-l5">
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Daisy (Thuy) Dinh Portfolio </a>
+  <a href="https://github.com/dinhdothuy" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="My Github"><i class="fa fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/thuy-dinh-553640123" target="_blank" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="My Linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="mailto:daisydodinh@gmail.com" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i class="fa fa-envelope"></i></a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-sort"></i><span class="w3-badge w3-right w3-small w3-blue">5</span></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="https://github.com/dinhdothuy/project1Team2" class="w3-bar-item w3-button" style= "text-decoration: none" target="_blank">Essentials App</a>
+      <a href="https://github.com/dinhdothuy/TriviaGame" class="w3-bar-item w3-button" style= "text-decoration: none" target="_blank">Trivia Game</a>
+      <a href="https://github.com/dinhdothuy/unit4game" class="w3-bar-item w3-button" style= "text-decoration: none" target="_blank">4 Unit Game</a>
+      <a href="https://github.com/dinhdothuy/giftastic" class="w3-bar-item w3-button" style= "text-decoration: none" target="_blank">Animal Gifs</a>
+      <a href="https://github.com/dinhdothuy/psychic_game" class="w3-bar-item w3-button" style= "text-decoration: none" target="_blank">Psychic Game</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white" title="My Account">
+    <img src="images/profile-photo.jpeg" class="w3-circle" style="height:23px;width:23px" alt="Avatar">
+  </a>
+ </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+</div>
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card w3-round w3-white">
+        <div class="w3-container">
+         <h4 class="w3-center">My Profile</h4>
+         <p class="w3-center"><img src="images/profile-photo.jpeg" class="w3-circle" style="height:120px;width:120px" alt="Avatar"></p>
+         <hr>
+         <p><i class="fa fa-address-card-o fa-fw w3-margin-right w3-text-theme"></i> Web/Software Developer, USA</p>
+         <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> Austin, Texas</p>
+         <p><i class="fa fa-phone fa-fw w3-margin-right w3-text-theme"></i> 510 634 2888</p>
+         <p><i class="fa fa-envelope fa-fw w3-margin-right w3-text-theme"></i> <a style= "text-decoration: none" href="mailto:daisydodinh@gmail.com">daisydodinh@gmail.com</a></p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card w3-round">
+        <div class="w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-github fa-fw w3-margin-right"></i> My Github</button>
+          <div id="Demo1" class="w3-hide w3-container">
+            <p><a href="https://github.com/dinhdothuy" target="_blank">https://github.com/dinhdothuy</a></p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-linkedin fa-fw w3-margin-right"></i> My Linkedin</button>
+          <div id="Demo2" class="w3-hide w3-container">
+            <p><a href="https://www.linkedin.com/in/thuy-dinh-553640123" target="_blank">https://www.linkedin.com/in/thuy-dinh-553640123</a></p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-button w3-block w3-theme-l1 w3-left-align"><i class="fa fa-thumbs-up fa-fw w3-margin-right"></i> My Apps</button>
+          <div id="Demo3" class="w3-hide w3-container">
+          <div class="w3-row-padding">
+          <br>
+            <div class="w3-half">
+              <a href="https://dinhdothuy.github.io/project1Team2/" target="_blank"><img src="images/Essentials-App.png" style="width:100%" class="w3-margin-bottom"></a>
+            </div>
+            <div class="w3-half">
+              <a href="https://dinhdothuy.github.io/giftastic/" target="_blank"><img src="images/gifs-game.png" style="width:100%" class="w3-margin-bottom"></a>
+            </div>
+            <div class="w3-half">
+              <a href="https://dinhdothuy.github.io/unit4game/" target="_blank"><img src="images/crystals-collector-game.png" style="width:100%" class="w3-margin-bottom"></a>
+            </div>
+            <div class="w3-half">
+              <a href="https://dinhdothuy.github.io/psychic_game/" target="_blank"><img src="images/psychic-game.png" style="width:100%" class="w3-margin-bottom"></a>
+            </div>
+            <div class="w3-half">
+              <a href="https://dinhdothuy.github.io/TriviaGame/" target="_blank"><img src="images/trivia-game.png" style="width:100%" class="w3-margin-bottom"></a>
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+      
+      <!-- Interests --> 
+      <div class="w3-card w3-round w3-white w3-hide-small">
+        <div class="w3-container">
+          <p>Skills</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d5">Ruby</span>
+            <span class="w3-tag w3-small w3-theme-d4">Ruby On Rails</span>
+            <span class="w3-tag w3-small w3-theme-d3">RSpec test</span>
+            <span class="w3-tag w3-small w3-theme-d2">RESTful API</span>
+            <span class="w3-tag w3-small w3-theme">jQuery</span>
+            <span class="w3-tag w3-small w3-theme-d5">webrick</span>
+            <span class="w3-tag w3-small w3-theme-d4">unicorn</span>
+            <span class="w3-tag w3-small w3-theme-d3">puma</span>
+            <span class="w3-tag w3-small w3-theme-d2">Apache</span>
+            <span class="w3-tag w3-small w3-theme-d1">javascript</span>
+            <span class="w3-tag w3-small w3-theme-d1">niginx</span>
+            <span class="w3-tag w3-small w3-theme">MySQL</span>
+            <span class="w3-tag w3-small w3-theme-l1">PostgreSQL</span>
+            <span class="w3-tag w3-small w3-theme-l1">Ajax</span>
+            <span class="w3-tag w3-small w3-theme-l2">HTML</span>
+            <span class="w3-tag w3-small w3-theme-l3">CSS</span>
+            <span class="w3-tag w3-small w3-theme-l4">Python</span>
+            <span class="w3-tag w3-small w3-theme-l5">AWS</span>
+            
+          </p>
+          <p>Other Hobbies:</p>
+          <p>
+            <span class="w3-tag w3-small w3-theme-d2">Broadcasting</span>
+            <span class="w3-tag w3-small w3-theme-d1">Animations</span>
+            <span class="w3-tag w3-small w3-theme">script writing</span>
+            <span class="w3-tag w3-small w3-theme-l2">Camera</span>
+            <span class="w3-tag w3-small w3-theme-l1">sound operation</span>
+            <span class="w3-tag w3-small w3-theme-l4"> Adobe Premiere Pro</span>
+            <span class="w3-tag w3-small w3-theme-l3">Telecommunications Systems</span>
+            <span class="w3-tag w3-small w3-theme-l5">Motion Graphics</span>
+          </p>
+        </div>
+      </div>
+      <br>
+    
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m7">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card w3-round w3-white">
+            <div class="w3-container w3-padding">
+              <h6 class="w3-opacity">About me</h6>
+              <p contenteditable="true" class="w3-border w3-padding">Hello! My name is Daisy. I am a web/software developer. My strength is hardworking and interested to learn new things and curious. My weakness is I am very workaholic, and I am fond of designing, filming, and listening to music. Let check some of my excited apps below to understand more about my abilities and my style!</p>
+              <a style= "text-decoration: none" href="mailto:daisydodinh@gmail.com"><button type="button" class="w3-button w3-theme w3-margin-bottom"><i class="fa fa-envelope-o w3-margin-right"></i>  Contact me</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="images/Essentials-App.png" alt="Essentials App" class="w3-left w3-round w3-margin-right w3-margin-bottom" style="width:100%">
+        <hr class="w3-clear">
+        <p>
+          This App is designed to provide a snapshot of the "essential" areas found in most cities and towns. Easy to click cards link back to an interactive map to allow users to get around easily when traveling to a new location.</p>
+        <a href="https://github.com/dinhdothuy/project1Team2" target="_blank"><button type="button" class="w3-button w3-theme-l1 w3-margin-bottom"><i class="fa fa-github w3-margin-right"></i>Repositorie</button></a>
+        <a href="https://dinhdothuy.github.io/project1Team2/" target="_blank"><button type="button" class="w3-button w3-theme-l1 w3-margin-bottom w3-right"><i class="fa fa-share w3-margin-right"></i>Try page</button></a>
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="images/trivia-game.png" alt="Trivia Game" class="w3-left w3-round w3-margin-right w3-margin-bottom" style="width:100%">
+        <hr class="w3-clear">
+        <p>
+          If you are looking for free quiz questions to make a quiz yourself, then you are at the right place! This website offers free online quizzes and questions with answers. With the help of this website it is possible to make a quiz in less than thirty minutes. Here you can create pub quizzes for free with our easy to use quiz maker. At this moment we have more than two hundred questions online on various topics. Moreover you can test your knowledge of diverse topics from culture to geography with our quizzes. </p>
+        <a href="https://github.com/dinhdothuy/TriviaGame" target="_blank"><button type="button" class="w3-button w3-theme-l1 w3-margin-bottom"><i class="fa fa-github w3-margin-right"></i>Repositorie</button></a>
+        <a href="https://dinhdothuy.github.io/TriviaGame/" target="_blank"><button type="button" class="w3-button w3-theme-l1 w3-margin-bottom w3-right"><i class="fa fa-share w3-margin-right"></i>Try page</button></a> 
+      </div>
+      
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="images/crystals-collector-game.png" alt="4 Unit Game" class="w3-left w3-round w3-margin-right w3-margin-bottom" style="width:100%">
+        <hr class="w3-clear">
+        <p>
+          There will be four crystals displayed as buttons on the page. The player will be shown a random number at the start of the game. When the player clicks on a crystal, it will add a specific amount of points to the player's total score. Your game will hide this amount until the player clicks a crystal. When they do click one, update the player's score counter. The player wins if their total score matches the random number from the beginning of the game.</p>
+        <a href="https://github.com/dinhdothuy/unit4game" target="_blank"><button type="button" class="w3-button w3-theme-l1 w3-margin-bottom"><i class="fa fa-github w3-margin-right"></i>Repositorie</button></a>
+        <a href="https://dinhdothuy.github.io/unit4game/" target="_blank"><button type="button" class="w3-button w3-theme-l1 w3-margin-bottom w3-right"><i class="fa fa-share w3-margin-right"></i>Try page</button></a>   
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="images/gifs-game.png" alt="Animal Gifs" class="w3-left w3-round w3-margin-right w3-margin-bottom" style="width:100%">
+        <hr class="w3-clear">
+        <p>
+          In this excercise, I used the GIPHY API to make a dynamic web page that populates with gifs of your choice. To finish this task, I get the GIPHY API and use JavaScript and jQuery to change the HTML of the site. There is a loop that appends a button for each string in the array. When the user clicks on a button, the page should grab 10 static, non-animated gif images from the GIPHY API and place them on the page. When the user clicks one of the still GIPHY images, the gif should animate. If the user clicks the gif again, it should stop playing.</p>
+        <a href="https://github.com/dinhdothuy/giftastic" target="_blank"><button type="button" class="w3-button w3-theme-l1 w3-margin-bottom"><i class="fa fa-github w3-margin-right"></i>Repositorie</button></a>
+        <a href="https://dinhdothuy.github.io/giftastic/" target="_blank"><button type="button" class="w3-button w3-theme-l1 w3-margin-bottom w3-right"><i class="fa fa-share w3-margin-right"></i>Try page</button></a>   
+      </div>
+
+      <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
+        <img src="images/psychic-game.png" alt="Psychic Game" class="w3-left w3-round w3-margin-right w3-margin-bottom" style="width:100%">
+        <hr class="w3-clear">
+        <p>
+          The app randomly picks a letter, and the user has to guess which letter the app chose. Then... Guess what letter I'm thinking of... When the player wins, increase the Wins counter and start the game over again. When the player loses, increase the Losses counter and restart the game.</p>
+        <a href="https://github.com/dinhdothuy/psychic_game" target="_blank"><button type="button" class="w3-button w3-theme-l1 w3-margin-bottom"><i class="fa fa-github w3-margin-right"></i>Repositorie</button></a>
+        <a href="https://dinhdothuy.github.io/psychic_game/" target="_blank"><button type="button" class="w3-button w3-theme-l1 w3-margin-bottom w3-right"><i class="fa fa-share w3-margin-right"></i>Try page</button></a>   
+      </div>
+  
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m2">
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>New App:</p>
+          <img src="images/Sucky-Number.png" class="w3-round" alt="Forest" style="width:100%;">
+          <p><strong>Sucky Numbers</strong></p>
+          <p>Best app for your lotery number</p>
+          <p><button class="w3-button w3-block w3-theme-l4">Download</button></p>
+        </div>
+      </div>
+      <br>
+
+      <div class="w3-card w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p>Most download App:</p>
+          <img src="images/touch-me.png" class="w3-round" alt="Forest" style="width:100%;">
+          <p><strong>Touch Me</strong></p>
+          <p>Best app to photoshop yourself </p>
+          <p><button class="w3-button w3-block w3-theme-l4">Download</button></p>
+        </div>
+      </div>
+      <br>
+          
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-d5">
+  <p style = "text-align: center">Daisy Dinh &#169 2018</a></p>
+</footer>
+ 
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html> 
